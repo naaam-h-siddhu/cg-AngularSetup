@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="app.component.css">
 <div>
   <h1>{{title}}</h1>
-  <img [src]="imgUrl" [alt]="'The Bridgelabz logo'">
+  <img [src]="imgUrl" (click)="onClick($event)" [alt]="'The Bridgelabz logo'">
 </div>
 <router-outlet></router-outlet>
